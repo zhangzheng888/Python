@@ -1,0 +1,10 @@
+name = 'Kevin'
+age = 31
+if name == 'Kevin':
+	print ('hello King of the North')
+elif age < 31:
+	print ('you are not ready')
+elif age > 50:
+	print ('grandpa status')
+elif age > 31 && < 50:
+	print ('you are the next Jedi')

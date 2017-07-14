@@ -1,0 +1,6 @@
+password = 'goldeneye'
+if password == 'goldeneye':
+	print ('missile is ready')
+else:
+	print ('not yet James Bond')
+	
