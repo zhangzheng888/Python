@@ -1,6 +1,8 @@
 import decimal
 
 '''
+Data Types: Numbers
+
 Floating-point numbers are implemented in computer hardware as binary fractions, as computer
 only understands binary (0 and 1). Due to this reason, most of the decimal fractions we know,
 cannot be accurately stored in our computer.
