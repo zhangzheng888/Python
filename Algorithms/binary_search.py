@@ -2,7 +2,7 @@
 Python Algorithm for Binary Search
 """
 
-def binary_search(self, target):
+def binary_search(list, target):
     first = 0
     last = len(list) - 1
 
