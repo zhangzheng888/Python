@@ -68,9 +68,24 @@ next allotted size
 """
 
 """
+Python List has an insert function as well, working similarly
+to append, but can be anywhere within the index as opposed to
+the front.
+"""
+
+"""
 Python List has another function extend, which takes each element
 from the added list and makes a series of append calls to add the
 elements to the new list
 """
 
 new_list.extend([4, 5, 6])
+
+"""
+Extend has a runtime complexity of O(k) where k is the number
+of elements in the list that is being added
+"""
+
+"""
+Python List also contains a delete operation.
+"""
