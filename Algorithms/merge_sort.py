@@ -25,13 +25,34 @@ def split(list):
     Divide the unsorted list at midpoint into sublists
     Returns 2 sublists: left and right
 
-    Takes O(log n) time
+    Takes O(k log n) time
     """
 
     midpoint = len(list)//2
     left = list[:midpoint] # Python slice operation runs on O(k)
     right = list[midpoint:]
     return left, right
+
+def split_iterative(list):
+    """
+    Divide the unsorted list at midpoint into sublists without using list slicing
+    Returns 2 sublists: left and right
+
+    Takes O(log n) time
+    """
+
+    midpoint = len(list)//2
+    left = []
+    right = []
+
+
+    for index in range(len(list) - 1):
+        if index < midpoint:
+            left.append(list[index])
+        elif index >= midpoint:
+            right.append(list[index])
+    return left, right
+
 
 def merge(list_left, list_right):
     """
