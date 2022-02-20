@@ -89,3 +89,71 @@ of elements in the list that is being added
 """
 Python List also contains a delete operation.
 """
+
+
+"""
+Python List Comprehension
+
+basic format: new_list = [transform sequence[filter]]
+
+Example 1:
+Get values within a range
+
+under_10 = [x for x in range(10)]
+
+
+Example 2:
+Get squared values
+
+squares = [x**2 for x in range(10)]
+
+
+Example 3:
+Get odd numbers using modulus
+
+odds = [x for x in range(10) if x%2 == 1]
+
+Example 4:
+Get multiples of 10
+
+ten_x = [x * 10 for x in range(10)]
+
+Example 5:
+Get all numbers from a string
+
+string = "1 is 2 is 3 to 4"
+
+nums = [x for x in string if x.isnumeric()]
+
+Example 6:
+Get index of item in list
+
+list = ['Manny', 'Luis', 'Eddy']
+
+index = [k for k, v in enumerate(list) if k == 'Luis']
+
+Example 7:
+Delete an item from a list
+
+old_list = [x for x in 'ABCDEF']
+
+new_list = [x for x in old_list if x != 'F']
+
+
+If-else condition in Comprehension
+must come before iteration
+Example:
+
+nums = [5, 8, 7, 3, 4, 1]
+
+new_list = [x if x%2 != 1 else x*10 for x in nums]
+
+Nested loop iteration for 2D list
+
+Example:
+
+a = [[1, 2][3, 4]]
+
+b is the subset, x is the values
+new_list = [x for b in a for x in b]
+"""
