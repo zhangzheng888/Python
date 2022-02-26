@@ -51,6 +51,7 @@ class Stack():
             return self.stack.pop()
         else:
             return None
+            
     def peek(self):
         if len(self.stack) > 0:
             return self.stack[-1]
